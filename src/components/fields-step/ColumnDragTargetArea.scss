@@ -26,6 +26,17 @@
     }
   }
 
+  &__boxDefault {
+    margin-bottom: 0.25em;
+    color: $textColor;
+  }
+
+  &__boxDefaultInput {
+    width: 150px;
+    font-size: 16px;
+    color: $textColor;
+  }
+
   &__boxValue {
     position: relative; // for action and placeholder
     z-index: 0; // contain the z-indexes of contents (to prevent e.g. placeholder being above drag object)

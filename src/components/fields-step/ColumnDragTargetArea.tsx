@@ -107,6 +107,14 @@ const TargetBox: React.FC<{
         {field.isOptional ? null : <b>*</b>}
       </div>
 
+      <div className="CSVImporter_ColumnDragTargetArea__boxDefault" aria-hidden>
+        <input
+          type="text"
+          data-fieldName="{field.label}"
+          className="CSVImporter_ColumnDragTargetArea__boxDefaultInput"
+        />
+      </div>
+
       <div className="CSVImporter_ColumnDragTargetArea__boxValue">
         {!sourceColumn && !assignedColumn && (
           <div

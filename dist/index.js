@@ -3613,6 +3613,8 @@ const TargetBox = ({ hasHeaders, field, touched, assignedColumn, dragState, even
         external_react_default.a.createElement("div", { className: "CSVImporter_ColumnDragTargetArea__boxLabel", "aria-hidden": true },
             field.label,
             field.isOptional ? null : external_react_default.a.createElement("b", null, "*")),
+        external_react_default.a.createElement("div", { className: "CSVImporter_ColumnDragTargetArea__boxDefault", "aria-hidden": true },
+            external_react_default.a.createElement("input", { type: "text", "data-fieldName": "{field.label}", className: "CSVImporter_ColumnDragTargetArea__boxDefaultInput" })),
         external_react_default.a.createElement("div", { className: "CSVImporter_ColumnDragTargetArea__boxValue" },
             !sourceColumn && !assignedColumn && (external_react_default.a.createElement("div", { className: "CSVImporter_ColumnDragTargetArea__boxPlaceholderHelp", "aria-hidden": true }, l10n.dragTargetPlaceholder)),
             external_react_default.a.createElement("div", Object.assign({}, dragStartHandlers, { style: { touchAction: 'none' } }), valueContents),
